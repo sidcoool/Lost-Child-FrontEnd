@@ -17,12 +17,7 @@ export class AppComponent {
     })
   };
 
-  signup = () => {
-    this.http.post<any>("http://localhost:5000/test", {"az": "abc"}, this.httpOptions)
-    .subscribe((data) => {
-      console.log(data)
-    })
-  }
+ 
 
   title = 'minor-web';
 }

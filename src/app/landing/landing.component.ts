@@ -13,13 +13,12 @@ export class LandingComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
-    this.userName = localStorage.getItem("name")
-    console.log(this.userName)
+    this.router.navigate(['/main'])
   }
 
-  logout = () => {
-    localStorage.removeItem("name")
-    this.router.navigate(['/'])
-  }
+  // logout = () => {
+  //   localStorage.removeItem("name")
+  //   this.router.navigate(['/'])
+  // }
 
 }
